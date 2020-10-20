@@ -4,16 +4,15 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
-app.set('view engine', 'ejs')
-app.set('views', 'app/views')
+app.set('view engine', 'ejs');
+app.set('views', './app/views');
 
 app.use(express.static('./app/public'))
 
 consign()
-    .include('./app/views')
-    .then('./app/routes')
-    .then('./app/controllers')
-    .into(app)
+    .include('app/routes')
+    .into(app);
 
-
-app.listen('8000')
+app.listen(process.env.PORT || 8000, function(){
+    console.log('serve on')
+})
