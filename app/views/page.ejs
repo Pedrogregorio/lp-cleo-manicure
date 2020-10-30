@@ -71,7 +71,38 @@
             <div>
                 <div class="uk-card-body">
                     <h3 class="uk-card-title">Venha marcar Seu Horario!</h3>
-                    <p>Para marcar um horario é muito facil, é so mandar mensagem no Whatsapp (67) 99294-3882. <a href=" https://api.whatsapp.com/send?phone=5567992943882&text=Ola me chamo ****, encontrei seu numero na internet e gostaria de marcar um horario">Para agilizar clique aqui</a></p>
+                    <form action="/marcar" method="POST">
+                        <input class="uk-input uk-width-1-2" type="text" name="nome" placeholder="Nome">
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-select">Serviços</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select uk-width-1-2" id="form-stacked-select" name="servico">
+                                    <option value="Mão">Mão</option>
+                                    <option value="Pé">Pé</option>
+                                    <option value="Pé / Mão">Pé / Mão</option>
+                                    <option class="uk-text-bold" disabled="">--- * ---</option>
+                                    <option value="Sobracelha">Sobracelha</option>
+                                    <option value="Sobracelha (henna)">Sobracelha (henna)</option>
+                                    <option value="Depilação (completa)">Depilação (completa)</option>
+                                    <option value="Depilação (simples)">Depilação (simples)</option>
+                                    <option value="Axila">Axila</option>
+                                    <option value="Buço">Buço</option>
+                                    <option value="Rosto">Rosto</option>
+                                    <option class="uk-text-bold" disabled="">--- * ---</option>
+                                    <option value="Unha Acrilico">Unha Acrilico</option>
+                                    <option value="Fibra de Vidro">Fibra de Vidro</option>
+                                    <option value="Esmaltação em Gel">Esmaltação em Gel</option>
+                                    <option value="Blindagem">Blindagem</option>
+                                </select>
+                            </div>
+                            <div class="uk-margin">
+                                <button class="uk-button uk-button-primary" type="submit"> Enviar </button>
+                            </div>
+                            
+                        </div>
+                    </form>
+                    <p>Para marcar um horario é muito facil, é so preencre o formulario ou mandar mensagem no Whatsapp (67) 99294-3882.
+
                 </div>
             </div>
         </div>
@@ -80,7 +111,7 @@
         <div id="sobre" class="uk-container">
             <div class="uk-card uk-card-default uk-padding uk-margin">                
                 <h1>Sobre</h1>
-                <h3>Olá pessoal ! me chamo Cleonecir, mas pode me chamar de Cléo, sou manicure, pedicure, depiladora e designer de sobrancelha, com mais de 12 anos trabalhando na área, atendo somente com horário marcado no WhatsApp (67) 992943882. Espero você no meu salão ❤🌹</h3>
+                <h3>Olá pessoal ! pode me chamar de Cléo, sou manicure, pedicure, depiladora e designer de sobrancelha, com mais de 12 anos trabalhando na área, atendo somente com horário marcado no WhatsApp (67) 992943882. Espero você no meu salão ❤🌹</h3>
         
             </div>
         </div>
